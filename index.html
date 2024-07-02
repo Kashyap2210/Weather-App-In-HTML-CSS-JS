@@ -22,54 +22,59 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="Weatherapplogo.jpg" type="image/png" />
   </head>
   <body>
     <h1>My Personal Weather App</h1>
 
     <div class="container">
       <div class="search-bar">
-        <input type="text" class="search-bar-main" placeholder="Enter City" spellcheck="false" />
+        <input
+          type="text"
+          class="search-bar-main"
+          placeholder="Enter City"
+          spellcheck="false"
+        />
         <button class="button-main">
-            <span class="material-symbols-outlined"> search </span>
+          <span class="material-symbols-outlined"> search </span>
         </button>
       </div>
       <div class="error">
         <p>Invalid City Name.</p>
       </div>
-        
-        <div class="weather">
-            <div class="weather-image">
-                <img src="images/rain.png" alt="rainy" class="weather-image-main">
-              </div>
-              
-                <h1 class="temp">22&deg;C</h1>
-                <!-- Here temperature will be shown. -->
-              
-              <div class="city">
-                <h2 class="city-main">New York</h2>
-              </div>
-              <div class="footer">
-                <div class="humidity">
-                  <img src="images/humidity.png" alt="" />
-                  <div class="info">
-                    <p class="humidity-main">40%</p>
-                    <p>Humidity</p>
-                  </div>
-                </div>
-                <div class="wind-speed">
-                  <img src="images/wind.png" alt="" />
-                  <div class="info">
-                    <p class="wind-speed-main">15 km/hr</p>
-                    <p>Wind Speed</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-        
+
+      <div class="weather">
+        <div class="weather-image">
+          <img src="images/rain.png" alt="rainy" class="weather-image-main" />
         </div>
-      
+
+        <h1 class="temp">22&deg;C</h1>
+        <!-- Here temperature will be shown. -->
+
+        <div class="city">
+          <h2 class="city-main">New York</h2>
+        </div>
+        <div class="footer">
+          <div class="humidity">
+            <img src="images/humidity.png" alt="" />
+            <div class="info">
+              <p class="humidity-main">40%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="wind-speed">
+            <img src="images/wind.png" alt="" />
+            <div class="info">
+              <p class="wind-speed-main">15 km/hr</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="app.js">
-        checkWeather();
+      checkWeather();
     </script>
   </body>
 </html>
