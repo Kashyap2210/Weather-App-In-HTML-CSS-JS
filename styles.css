@@ -42,7 +42,7 @@ h1 {
   color: #555;
   padding: 10px 25px;
   height: 60px;
-  /* width: 14.5rem; */
+  width: 14.5rem;
   border-radius: 30px;
   flex: 1;
   margin-right: 1rem;
@@ -72,28 +72,6 @@ h2 {
   font-weight: 400;
   margin-top: -10px;
 }
-/* .weather-image {
-  height: 5rem;
-  width: 17rem;
-  border: 1px solid black;
-  margin-left: 1.4rem;
-  margin-top: 1rem;
-} */
-/* .temp {
-  height: 5rem;
-  width: 17rem;
-  border: 1px solid black;
-  margin-top: 1rem;
-  margin-left: 1.4rem;
-} */
-
-/* .city {
-  height: 2rem;
-  width: 17rem;
-  border: 1px solid black;
-  margin-top: 1rem;
-  margin-left: 1.4rem;
-} */
 
 .footer {
   display: flex;
@@ -139,4 +117,35 @@ h2 {
   font-size: 14px;
   margin-top: 10px;
   display: none;
+}
+
+@media (max-width: 490px) {
+  .search-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-bar > input {
+    width: 100%;
+    margin-right: 0rem;
+    text-align: center;
+  }
+  .button-main {
+    margin-top: 1rem;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+  }
+  .footer > .wind-speed {
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  .footer .humidity img {
+    margin-right: 1rem;
+  }
 }
